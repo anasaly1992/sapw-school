@@ -1,0 +1,155 @@
+<div class="first-step">
+  <div class="first-step__avatar text-center">
+    <img
+      class="student-avatar d-inline-block"
+      src="assets/images/student-avatar.svg"
+      alt="Student Avatar"
+    />
+  </div>
+  <form
+    class="first-step__form"
+    autocomplete="off"
+    [formGroup]="registerFirstForm"
+  >
+    <div class="form-line row justify-content-between">
+      <div class="form-group col-md-6">
+        <label for="first_name">الأسم الأول</label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="first_name"
+          required
+        />
+        <div
+          *ngIf="first_name.invalid && (first_name.dirty || first_name.touched)"
+          class="pt-1 font-weight-bold"
+        >
+          <p class="text-danger" *ngIf="first_name.errors.required">
+            من فضلك أدخل الأسم الأول
+          </p>
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="last_name">الأسم الأخير</label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="last_name"
+          required
+        />
+        <div
+          *ngIf="last_name.invalid && (last_name.dirty || last_name.touched)"
+          class="pt-1 font-weight-bold"
+        >
+          <p class="text-danger" *ngIf="last_name.errors.required">
+            من فضلك أدخل الأسم الأخير
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-line row justify-content-between">
+      <div class="form-group col-md-6">
+        <label for="email">البريد الإلكتروني</label>
+        <input
+          type="email"
+          class="form-control"
+          formControlName="email"
+          required
+        />
+        <div
+          *ngIf="email.invalid && (email.dirty || email.touched)"
+          class="pt-1 font-weight-bold"
+        >
+          <p class="text-danger" *ngIf="email.errors.required">
+            من فضلك أدخل البريد الإلكتروني
+          </p>
+          <p class="text-danger" *ngIf="email.errors.email">
+            من فضلك أدخل بريدا إلكترونيا صحيحا
+          </p>
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="mobile_number">رقم التليفون</label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="mobile_number"
+          required
+        />
+        <div
+          *ngIf="
+            mobile_number.invalid &&
+            (mobile_number.dirty || mobile_number.touched)
+          "
+          class="pt-1 font-weight-bold"
+        >
+          <p class="text-danger" *ngIf="mobile_number.errors.required">
+            من فضلك أدخل رقم التليفون
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-line row justify-content-between">
+      <div class="form-group col-md-6">
+        <label for="gender">النوع</label>
+        <mat-select class="form-control" formControlName="gender">
+          <mat-option *ngFor="let gender of genders" [value]="gender.value">
+            {{ gender.viewValue }}
+          </mat-option>
+        </mat-select>
+        <div
+          *ngIf="gender.invalid && (gender.dirty || gender.touched)"
+          class="pt-1 font-weight-bold"
+        >
+          <p class="text-danger" *ngIf="gender.errors.required">
+            من فضلك أختار نوعك
+          </p>
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="date_of_birth">تاريخ ميلادك</label>
+        <div class="relative">
+          <input
+            class="form-control"
+            matInput
+            [matDatepicker]="dateOfBirth"
+            formControlName="date_of_birth"
+            required
+          />
+          <mat-datepicker-toggle
+            class="date-toggle"
+            matSuffix
+            [for]="dateOfBirth"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #dateOfBirth></mat-datepicker>
+        </div>
+        <div
+          *ngIf="
+            date_of_birth.invalid &&
+            (date_of_birth.dirty || date_of_birth.touched)
+          "
+          class="pt-1 font-weight-bold"
+        >
+          <p class="text-danger" *ngIf="date_of_birth.errors.required">
+            من فضلك أدخل تاريخ ميلادك
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="first-step__next">
+      <button
+        class="next-btn spw-blue-button w-100"
+        type="submit"
+        [class.disabled]="!registerFirstForm.valid"
+        [disabled]="!registerFirstForm.valid"
+        cdkStepperNext
+        (click)="completeFirstStep()"
+      >
+        التالي
+      </button>
+    </div>
+  </form>
+</div>

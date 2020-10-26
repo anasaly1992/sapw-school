@@ -1,0 +1,79 @@
+@import "../../../../global";
+
+#footer {
+  border: 1px solid #80808024;
+}
+
+.footer {
+  margin: 47px auto;
+}
+
+.footer .row {
+  position: relative;
+}
+
+.social-icons .google-icon {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.social-icons img {
+  margin-top: 28px;
+}
+
+.footer-menu-title {
+  @include text($spw-dark-blue, 1rem!important, bold, 2.44);
+  margin-bottom: 0.9375rem;
+}
+
+.footer-menu a {
+  @include text($spw-dark-blue, 0.875rem!important, normal, 2.79);
+  display: block;
+  margin-bottom: 0.3125rem;
+}
+
+.footer .data {
+  z-index: 999;
+}
+
+.footer .shape {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+
+.footer-menu .img {
+  width: 126px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .footer .data {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .footer-menu a {
+    font-size: 15px !important;
+  }
+}
+
+// .footer-brand {
+//   text-align: center;
+// }
+
+.social-icons {
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    display: flex;
+    justify-content: right;
+  }
+  .footer-brand {
+    text-align: right;
+  }
+}

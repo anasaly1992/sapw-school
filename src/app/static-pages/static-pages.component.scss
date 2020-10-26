@@ -1,0 +1,816 @@
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1330px;
+  }
+  .how-work .how-card {
+    width: 300px !important;
+  }
+  .how-learning .how-learning {
+    width: 300px !important;
+  }
+  .your-subjects .your-subjects-card {
+    width: 300px !important;
+  }
+  .which-subject-to-follow .which-subject-card {
+    width: 300px !important;
+  }
+  h1 {
+    font-size: 75px !important;
+  }
+  h2 {
+    font-size: 60px !important;
+  }
+  h4 {
+    font-size: 35px !important;
+  }
+  h5 {
+    font-size: 25px !important;
+  }
+  h6 {
+    font-size: 20px !important;
+  }
+  .link {
+    font-size: 20px !important;
+  }
+  span {
+    font-size: 18px !important;
+  }
+  .start-teaching .start-teaching-row .content {
+    font-size: 25px !important;
+  }
+}
+
+@media (min-width: 1650px) {
+  .container {
+    max-width: 1400px;
+  }
+  p {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 1750px) {
+  .container {
+    max-width: 1500px;
+  }
+  .how-learning p {
+    margin-top: 40px !important;
+  }
+  .how-work .how-card {
+    width: 330px !important;
+  }
+  .how-learning .how-learning {
+    width: 330px !important;
+  }
+  .your-subjects .your-subjects-card {
+    width: 330px !important;
+  }
+  .which-subject-to-follow .which-subject-card {
+    width: 330px !important;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  width: 262px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .btn-primary {
+    width: 140px;
+  }
+}
+
+.btn-primary.second {
+  width: 141px;
+  height: 41px;
+}
+
+@media (max-width: 768px) {
+  .btn-primary.second {
+    width: 120px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+}
+
+h1 {
+  font-size: 70px !important;
+  color: #30405d;
+}
+
+h2 {
+  font-size: 55px !important;
+  color: #30405d;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 40px !important;
+  color: #30405d;
+}
+
+h4 {
+  font-size: 30px !important;
+  color: #30405d;
+}
+
+h5 {
+  font-size: 18px !important;
+  color: #30405d;
+}
+
+h6 {
+  font-size: 16px !important;
+  color: #30405d;
+}
+
+p {
+  font-size: 14px !important;
+  color: #30405d;
+  overflow: hidden;
+}
+
+@media (max-width: 993px) {
+  h1 {
+    font-size: 60px !important;
+  }
+  h2 {
+    font-size: 45px !important;
+  }
+  h4 {
+    font-size: 25px !important;
+  }
+  h5 {
+    font-size: 16px !important;
+  }
+  h6 {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 55px !important;
+    line-height: normal !important;
+  }
+  h2 {
+    font-size: 35px !important;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width: 1300px) {
+    .container {
+      max-width: 1230px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1330px;
+    }
+    .how-work .how-card {
+      width: 300px !important;
+    }
+    .how-learning .how-learning {
+      width: 300px !important;
+    }
+    .your-subjects .your-subjects-card {
+      width: 300px !important;
+    }
+    .which-subject-to-follow .which-subject-card {
+      width: 300px !important;
+    }
+    h1 {
+      font-size: 75px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+    h4 {
+      font-size: 35px;
+    }
+    h5 {
+      font-size: 25px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .link {
+      font-size: 20px !important;
+    }
+    span {
+      font-size: 18px;
+    }
+    .start-teaching .start-teaching-row .content {
+      font-size: 25px !important;
+    }
+  }
+  
+  @media (min-width: 1650px) {
+    .container {
+      max-width: 1400px;
+    }
+    p {
+      font-size: 20px !important;
+    }
+  }
+  
+  @media (min-width: 1750px) {
+    .container {
+      max-width: 1500px;
+    }
+    .how-learning p {
+      margin-top: 40px !important;
+    }
+    .how-work .how-card {
+      width: 330px !important;
+    }
+    .how-learning .how-learning {
+      width: 330px !important;
+    }
+    .your-subjects .your-subjects-card {
+      width: 330px !important;
+    }
+    .which-subject-to-follow .which-subject-card {
+      width: 330px !important;
+    }
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-primary {
+    width: 262px;
+    height: 48px;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .btn-primary {
+      width: 140px;
+    }
+  }
+  
+  .btn-primary.second {
+    width: 141px;
+    height: 41px;
+  }
+  
+  @media (max-width: 768px) {
+    .btn-primary.second {
+      width: 120px;
+    }
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 70px;
+    color: #30405d;
+  }
+  
+  h2 {
+    font-size: 55px;
+    color: #30405d;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 40px;
+    color: #30405d;
+  }
+  
+  h4 {
+    font-size: 30px;
+    color: #30405d;
+  }
+  
+  h5 {
+    font-size: 18px;
+    color: #30405d;
+  }
+  
+  h6 {
+    font-size: 16px;
+    color: #30405d;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #30405d;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 993px) {
+    h1 {
+      font-size: 60px !important;
+    }
+    h2 {
+      font-size: 45px;
+    }
+    h4 {
+      font-size: 25px !important;
+    }
+    h5 {
+      font-size: 16px !important;
+    }
+    h6 {
+      font-size: 14px !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 55px !important;
+      line-height: normal !important;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    h4 {
+      font-size: 20px !important;
+    }
+    h5 {
+      font-size: 14px !important;
+    }
+  }
+  
+  /* SRART HOW LEARNING */
+  
+  #how-learning {
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #ffffff, #f8fbfe);
+  }
+  
+  .how-learning {
+    margin-top: 91px;
+    margin-bottom: 71px;
+  }
+  
+  .how-learning h2 {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  
+  .how-learning h5 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+  
+  .how-learning h4 {
+    text-align: center;
+    margin-bottom: 13px;
+    padding: 0 5px;
+    height: 44px;
+    overflow: hidden;
+  }
+  
+  .how-learning .how-learning-row {
+    justify-content: center;
+    position: relative;
+  }
+  
+  .how-learning .how-learning-row img {
+    position: absolute;
+    bottom: 52px;
+    right: -80px;
+  }
+  
+  .how-learning .how-learning:hover {
+    background: #0074ff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .how-learning .how-learning {
+    /* height: 353px; */
+    width: 262px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.03);
+    background-color: #ffffff;
+    margin-bottom: 82px;
+    overflow: hidden;
+  }
+  
+  .how-learning .img {
+    width: 72px;
+    height: 86px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    margin-top: 45px;
+    /* margin-bottom: 76px; */
+    background: no-repeat center;
+  }
+  
+  .how-learning p {
+    text-align: center;
+    margin: 0 50px;
+    margin-bottom: 29px;
+  }
+  
+  .how-learning span {
+    font-size: 80px;
+    letter-spacing: normal;
+    text-align: right;
+    color: #30405d;
+    opacity: 0.3;
+    font-weight: bold;
+    margin-right: 7px;
+  }
+  
+  .how-learning:hover > h4,
+  .how-learning .how-learning:hover > p {
+    color: #ffffff;
+  }
+  
+  @media (max-width: 1200px) and (min-width: 992px) {
+    .how-learning .how-learning {
+      width: 230px;
+    }
+  }
+  
+  /* SRART YOUR SUBJECTS */
+  
+  #your-subjects {
+    overflow: hidden;
+  }
+  
+  .your-subjects {
+    margin-top: 91px;
+    margin-bottom: 71px;
+  }
+  
+  .your-subjects h2 {
+    margin-bottom: 102px;
+  }
+  
+  .your-subjects .your-subjects-card {
+    width: 262px;
+    border-radius: 8px;
+    box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.03);
+    border: solid 1px #e5eaf4;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 24px 10px;
+    padding-top: 39px;
+  }
+  
+  .your-subjects h6 {
+    margin-bottom: 3px;
+  }
+  
+  .your-subjects a {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0074ff;
+  }
+  
+  .your-subjects-row {
+    position: relative;
+  }
+  
+  .your-subjects-row .shape {
+    position: absolute;
+    left: -82px;
+    bottom: 20px;
+  }
+  
+  .your-subjects-card .img {
+    float: right;
+    width: 42px;
+    height: 42px;
+    position: relative;
+  }
+  
+  .your-subjects-card .icon {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    top: 22px;
+    left: 2px;
+  }
+  
+  /* SRART STUDENTS EVERY WHERE */
+  
+  #students-everywhere {
+    overflow: hidden;
+    background: #fafafb;
+  }
+  
+  .students-everywhere {
+    background: url(../../assets/backgrounds/group-7.png) no-repeat center;
+    background-size: contain;
+    height: 480px;
+    width: 100%;
+    margin: 60px 0;
+  }
+  
+  .students-everywhere h2 {
+    padding-top: 130px;
+    width: 525px;
+    margin: 0 auto;
+  }
+  
+  .students-everywhere h5 {
+    width: 525px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-weight: normal !important;
+  }
+  
+  @media (max-width: 660px) {
+    .students-everywhere h2 {
+      width: 225px;
+    }
+    .students-everywhere h5 {
+      width: 200px;
+    }
+  }
+  
+  .students-everywhere .btn {
+    margin-top: 50px;
+  }
+  
+  .your-subjects-card .content {
+    margin-right: 50px;
+  }
+  
+  /* SRART HOW WORK */
+  
+  #how-work {
+    overflow: hidden;
+    background: #ebf2fa;
+  }
+  
+  .how-work {
+    margin-top: 91px;
+    margin-bottom: 71px;
+  }
+  
+  .how-work h2 {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  
+  .how-work h5 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 70px;
+    font-weight: normal !important;
+  }
+  
+  .how-work h4 {
+    text-align: center;
+    margin-bottom: 13px;
+    padding: 0 5px;
+  }
+  
+  .how-work .how-card-row {
+    justify-content: center;
+    position: relative;
+  }
+  
+  .how-work .how-card-row .shape {
+    position: absolute;
+    right: -70px;
+    bottom: 116px;
+  }
+  
+  .how-work .how-card:hover {
+    background: #0074ff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .how-work .how-card:hover > h4,
+  .how-work .how-card:hover > p {
+    color: #ffffff;
+  }
+  
+  .how-work .how-card {
+    /* height: 353px; */
+    width: 262px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.03);
+    background-color: #ffffff;
+    margin-bottom: 82px;
+    overflow: hidden;
+  }
+  
+  .how-work .img {
+    width: 103px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    margin-top: 45px;
+    /* margin-bottom: 76px; */
+    background: no-repeat center;
+  }
+  
+  .how-work p {
+    text-align: center;
+    margin: 0 50px;
+  }
+  
+  .how-work span {
+    font-size: 80px !important;
+    letter-spacing: normal;
+    line-height: 100px;
+    text-align: right;
+    color: #30405d;
+    opacity: 0.3;
+    font-weight: bold;
+    margin-right: 7px;
+  }
+  
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .your-subjects .your-subjects-card,
+    .how-work .how-card {
+      width: 230px;
+    }
+  }
+  
+  /* SRART BE TEACHER */
+  
+  #be-teacher {
+    overflow: hidden;
+    background: #eff4ff;
+  }
+  
+  .be-teacher {
+    margin-top: 51px;
+    margin-bottom: 61px;
+  }
+  
+  .be-teacher .content {
+    margin: 20px 65px;
+  }
+  
+  .be-teacher h5 {
+    margin-top: 60px;
+    margin-bottom: 65px;
+    font-weight: normal;
+  }
+  
+  .be-teacher h2 {
+    margin-top: 0px;
+    text-align: right;
+  }
+  
+  .be-teacher .btn {
+    width: 168px;
+    height: 48px;
+    border-radius: 24px;
+    box-shadow: 0 20px 30px 0 rgba(60, 29, 137, 0.08);
+    background-color: #0074ff;
+  }
+  
+  .be-teacher .img {
+    width: 284px;
+    height: 290px;
+    margin: 0 auto;
+  }
+  
+  /* STRART BE FOLLOW LECTURES */
+  
+  #follow-lectures {
+    overflow: hidden;
+  }
+  
+  .follow-lectures {
+    margin-top: 130px;
+    margin-bottom: 140px;
+  }
+  
+  @media (max-width: 1200px) {
+    .follow-lectures {
+      margin-top: 80px !important;
+    }
+  }
+  
+  .follow-lectures h2 {
+    margin: 49px 0;
+    line-height: 1.42;
+    text-align: right !important;
+    margin-top: 53px;
+  }
+  
+  .follow-lectures p {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: right;
+    color: #30405d;
+    margin-bottom: 49px;
+  }
+  
+  .follow-lectures ul {
+    padding: 0;
+    margin-bottom: 90px;
+  }
+  
+  .follow-lectures li {
+    list-style: none;
+    margin-bottom: 40px;
+  }
+  
+  .follow-lectures li .img {
+    padding: 5px;
+    margin-left: 20px;
+    background-color: #80808026;
+    border-radius: 8px;
+  }
+  
+  .follow-lectures li .content {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #30405d;
+  }
+  
+  .follow-lectures .down-load {
+    margin-bottom: 70px;
+  }
+  
+  .follow-lectures .down-load img {
+    margin-left: 16px;
+  }
+  
+  /* .follow-lectures .follow-img {
+    width: 803px;
+    height: 893px;
+  } */
+  
+  .follow-lectures .follow-img img {
+    object-fit: contain;
+  }
+  
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .your-subjects .your-subjects-card,
+    .how-work .how-card {
+      width: 230px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .follow-lectures .follow-img img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  

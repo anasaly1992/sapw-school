@@ -1,0 +1,321 @@
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1330px;
+  }
+  .how-work .how-card {
+    width: 300px !important;
+  }
+  .how-learning .how-learning {
+    width: 300px !important;
+  }
+  .your-subjects .your-subjects-card {
+    width: 300px !important;
+  }
+  .which-subject-to-follow .which-subject-card {
+    width: 300px !important;
+  }
+  h1 {
+    font-size: 75px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 35px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  h6 {
+    font-size: 20px;
+  }
+  .link {
+    font-size: 20px !important;
+  }
+  span {
+    font-size: 18px;
+  }
+  .start-teaching .start-teaching-row .content {
+    font-size: 25px !important;
+  }
+}
+
+@media (min-width: 1650px) {
+  .container {
+    max-width: 1400px;
+  }
+  p {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 1750px) {
+  .container {
+    max-width: 1500px;
+  }
+  .how-learning p {
+    margin-top: 40px !important;
+  }
+  .how-work .how-card {
+    width: 330px !important;
+  }
+  .how-learning .how-learning {
+    width: 330px !important;
+  }
+  .your-subjects .your-subjects-card {
+    width: 330px !important;
+  }
+  .which-subject-to-follow .which-subject-card {
+    width: 330px !important;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  width: 262px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .btn-primary {
+    width: 140px;
+  }
+}
+
+.btn-primary.second {
+  width: 141px;
+  height: 41px;
+}
+
+@media (max-width: 768px) {
+  .btn-primary.second {
+    width: 120px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 70px;
+  color: #30405d;
+}
+
+h2 {
+  font-size: 55px;
+  color: #30405d;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 40px;
+  color: #30405d;
+}
+
+h4 {
+  font-size: 30px;
+  color: #30405d;
+}
+
+h5 {
+  font-size: 18px;
+  color: #30405d;
+}
+
+h6 {
+  font-size: 16px;
+  color: #30405d;
+}
+
+p {
+  font-size: 14px;
+  color: #30405d;
+  overflow: hidden;
+}
+
+@media (max-width: 993px) {
+  h1 {
+    font-size: 60px !important;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h4 {
+    font-size: 25px !important;
+  }
+  h5 {
+    font-size: 16px !important;
+  }
+  h6 {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 55px !important;
+    line-height: normal !important;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 14px !important;
+  }
+}
+#FAQs {
+  background-color: #fafafb;
+  overflow: hidden;
+}
+
+.FAQs {
+  margin: 130px auto;
+}
+
+h5 {
+  margin-top: 25px;
+}
+
+.toggle-aria {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(60, 29, 137, 0.08);
+  border: solid 1px #ececec;
+  margin: 30px 0;
+}
+
+.toggle-header {
+  cursor: pointer;
+}
+
+.card {
+  border: none !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.question-how-work {
+  margin-top: 80px;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(60, 29, 137, 0.08);
+  border: solid 1px #ececec;
+  background-color: #ffffff;
+}
+
+/* STRART BE FOLLOW LECTURES */
+
+#follow-lectures {
+  overflow: hidden;
+}
+
+.follow-lectures {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1200px) {
+  .follow-lectures {
+    margin-top: 80px !important;
+  }
+}
+
+.follow-lectures h2 {
+  margin: 49px 0;
+  line-height: 1.42;
+  text-align: right !important;
+  margin-top: 53px;
+  width: 424px !important;
+}
+
+.follow-lectures p {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: normal;
+  text-align: right;
+  color: #30405d;
+  margin-bottom: 49px;
+}
+
+.follow-lectures ul {
+  padding: 0;
+  margin-bottom: 90px;
+}
+
+.follow-lectures li {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.follow-lectures li .img {
+  padding: 5px;
+  margin-left: 20px;
+  background-color: #80808026;
+  border-radius: 8px;
+}
+
+.follow-lectures li .content {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #30405d;
+}
+
+.follow-lectures .down-load {
+  margin-bottom: 70px;
+}
+
+.follow-lectures .down-load img {
+  margin-left: 16px;
+}
+
+/* .follow-lectures .follow-img {
+  width: 803px;
+  height: 893px;
+} */
+
+.follow-lectures .follow-img img {
+  object-fit: contain;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .your-subjects .your-subjects-card,
+  .how-work .how-card {
+    width: 230px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .follow-lectures .follow-img img {
+    width: 100%;
+    height: 100%;
+  }
+}

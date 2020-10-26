@@ -1,0 +1,22 @@
+.text-center {
+  text-align: center !important;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.text-danger {
+  color: $spw-red !important;
+}
+.font-weight-bold {
+  font-weight: 500 !important;
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.relative {
+  position: relative !important;
+}
+.w-100 {
+  width: 100% !important;
+}

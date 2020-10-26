@@ -1,0 +1,60 @@
+<section id="form">
+  <h1 class="text-center">{{ contactData.title }}</h1>
+  <h5 class="text-center">{{ contactData.subTitle }}</h5>
+  <div class="container form">
+    <form #mailForm="ngForm" (ngSubmit)="applySending(mailForm)">
+      <div class="form-group">
+        <label for="exampleInputEmail1">نتشرف بيك؟</label>
+        <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp"
+          [ngClass]="{ 'is-invalid': mailForm.submitted && name.invalid }" placeholder="أدخل اسمك هنا" ngModel
+          #name="ngModel" required />
+        <div *ngIf="name.touched && name.invalid" class="feedback">
+          <div>*يجب ارسال الاسم</div>
+        </div>
+        <label for="exampleInputEmail1">البريد الالكتروني</label>
+        <input type="text" name="email" class="form-control" id="email" aria-describedby="emailHelp"
+          placeholder="أدخل بريدك هنا" ngModel #email="ngModel" required email />
+        <div *ngIf="email.touched && email.invalid" class="feedback">
+          <div *ngIf="email.errors.required">*يجب كتابة البريد الالكتروني</div>
+          <div *ngIf="email.errors.email">*بريد الكتروني غير متاح</div>
+        </div>
+        <label for=" exampleInputEmail1">رسالتك</label>
+        <input type="text" name="message" class="form-control" id="message" aria-describedby="emailHelp"
+          placeholder="اكتب استفسارك او رسالتك هنا" ngModel #message="ngModel" required />
+        <div class="feedback" *ngIf="message.touched && message.invalid">
+          <div *ngIf="message.errors.required">*يجب كتابة رسالة</div>
+        </div>
+      </div>
+      <button [disabled]="mailForm.invalid" type="submit" class="btn btn-primary">
+        ارسل الان
+      </button>
+      <h5 class="success" *ngIf="statusTrue === true">تم الارسال بنجاح</h5>
+      <h5 class="false" *ngIf="statusTrue === false">لم يتم الارسال</h5>
+    </form>
+  </div>
+  <h3 class="text-center">{{ socialMedia.title }}</h3>
+  <div class="icons">
+    <a href="#" *ngFor="let icon of socialMedia.icons"><img [src]="icon" width="100%" height="100%" /></a>
+  </div>
+</section>
+
+<section id="be-teacher">
+  <div class="container be-teacher">
+    <div class="row">
+      <div class="col-xl-3">
+        <div class="img text-center">
+          <img [src]="beTeacher.img" width="100%" height="100%" alt="be teacher image" />
+        </div>
+      </div>
+      <div class="col-xl-9">
+        <div class="content">
+          <h2>{{ beTeacher.header }}</h2>
+          <p>{{ beTeacher.par }}</p>
+          <button type="button" class="btn btn-primary" [routerLink]="['/auth/login']">
+            كن معلما
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

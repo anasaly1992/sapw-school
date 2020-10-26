@@ -1,0 +1,24 @@
+<div class="register">
+  <h1 class="register__title text-center">إنشاء حساب جديد</h1>
+  <section class="register__stepper d-flex justify-content-center">
+    <app-register-stepper>
+      <cdk-step>
+        <app-register-first-step
+          (firstStepCompleted)="saveStepData($event)"
+        ></app-register-first-step>
+      </cdk-step>
+      <cdk-step>
+        <app-register-second-step
+          (secondStepCompleted)="saveStepData($event)"
+        ></app-register-second-step>
+      </cdk-step>
+      <cdk-step>
+        <app-register-third-step></app-register-third-step>
+      </cdk-step>
+    </app-register-stepper>
+  </section>
+  <p class="register__have-account text-center">
+    لديك حساب ؟
+    <a routerLink="/auth/login">قم بتسجيل الدخول</a>
+  </p>
+</div>

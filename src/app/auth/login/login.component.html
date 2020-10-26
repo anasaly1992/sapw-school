@@ -1,0 +1,80 @@
+<section class="login d-flex">
+  <img
+    class="login__image d-block"
+    src="assets/images/student-bg.jpg"
+    alt="login image"
+  />
+  <div class="login__form">
+    <h1 class="form-title">تسجيل الدخول</h1>
+    <form autocomplete="off" [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-group">
+        <label for="Email">البريد الألكتروني</label>
+        <input
+          type="email"
+          class="form-control"
+          formControlName="Email"
+          required
+        />
+        <div
+          *ngIf="email.invalid && (email.dirty || email.touched)"
+          class="pt-1 text-danger font-weight-bold"
+        >
+          <p *ngIf="email.errors.required">من فضلك أدخل البريد الألكتروني</p>
+          <p *ngIf="email.errors.email">من فضلك أدخل بريد إلكتروني صحيح</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">كلمة السر</label>
+        <input
+          type="password"
+          class="form-control"
+          autocomplete="new-password"
+          formControlName="Password"
+          required
+        />
+        <div
+          *ngIf="password.invalid && (password.dirty || password.touched)"
+          class="pt-1"
+        >
+          <p
+            *ngIf="password.errors.required"
+            class="text-danger font-weight-bold"
+          >
+            من فضلك أدخل كلمة السر
+          </p>
+        </div>
+      </div>
+
+      <a href="#" class="forget-password d-block">هل نسيت كلمة المرور؟</a>
+
+      <button
+        class="login-btn spw-blue-button"
+        type="submit"
+        [class.disabled]="!loginForm.valid"
+        [disabled]="!loginForm.valid"
+      >
+        تسجيل الدخول
+      </button>
+
+      <p class="social-login-title text-center">أو بواسطة</p>
+
+      <div class="social-buttons text-center">
+        <img
+          src="assets/images/facebook.svg"
+          class="facebook-icon cursor-pointer"
+          alt="facebook icon"
+        />
+        <img
+          src="assets/images/google.svg"
+          class="google-icon cursor-pointer"
+          alt="google icon"
+          (click)="socialLogin('google')"
+        />
+      </div>
+    </form>
+
+    <p class="already-member text-center">
+      ليس لديك حساب ؟ <a routerLink="/auth/register">قم بالتسجيل الآن</a>
+    </p>
+  </div>
+</section>

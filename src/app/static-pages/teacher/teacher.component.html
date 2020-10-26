@@ -1,0 +1,77 @@
+<section id="be-teacher2">
+  <div class="container be-teacher2">
+    <div class="row">
+      <div class="col-xl-5">
+        <div class="content">
+          <h1>{{ beTeacher.title }}</h1>
+          <p>{{ beTeacher.par }}</p>
+          <button type="button" class="btn btn-primary" [routerLink]="['/auth/login']">
+            {{ beTeacher.button }}
+          </button>
+        </div>
+      </div>
+      <div class="col-xl-7">
+        <div class="img text-center">
+          <img [src]="beTeacher.img" width="100%" height="auto" alt="be teacher image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-learning">
+  <div class="container how-learning">
+    <h2>{{ howLearning.title }}</h2>
+    <h5>{{ howLearning.par }}</h5>
+    <div class="row how-learning-row">
+      <div class="col-lg-3 col-md-6 col-12" *ngFor="let data of howLearning.howLeaningCardData; let i = index">
+        <div class="how-learning" (mouseout)="howLearning.howLeaningCardData[i].hover = 1"
+          (mouseover)="howLearning.howLeaningCardData[i].hover = 2">
+          <div class="img" [ngStyle]="
+              howLearning.howLeaningCardData[i].hover === 1
+                ? Style(data.icon)
+                : hoverStyle(data.hoverIcon)
+            ">
+            <!-- <img [src]="data.icon"> -->
+          </div>
+          <h4>{{ data.header }}</h4>
+          <p>{{ data.par }}</p>
+        </div>
+      </div>
+      <img class="shape" src="assets/shapes/combined-shape.png" alt="dots shape" />
+    </div>
+  </div>
+</section>
+
+<section id="start-teaching">
+  <div class="container start-teaching">
+    <div class="col-12">
+      <h2 class="text-center">{{ startTeaching.title }}</h2>
+      <p class="text-center">{{ startTeaching.par }}</p>
+      <div class="row start-teaching-row">
+        <div class="col-md-4 start-teaching-col" *ngFor="let data of startTeaching.list">
+          <div class="icon float-right">
+            <img [src]="data.icon" width="32px" height="32px" alt="icon" />
+          </div>
+          <div class="content">{{ data.par }}</div>
+        </div>
+      </div>
+      <div class="img">
+        <img [src]="startTeaching.img" width="100%" height="auto" alt="start teaching image" />
+      </div>
+    </div>
+    <img class="shape" src="assets/shapes/combined-shape.png" alt="dots shape" />
+  </div>
+</section>
+
+<section id="students-everywhere">
+  <div class="students-everywhere">
+    <h2 style="color:#0074ff">{{ studentEveryWhere.header }}</h2>
+    <h5 class="text-center">{{ studentEveryWhere.par }}</h5>
+    <div class="center">
+      <button type="button" class="btn btn-primary" [routerLink]="['/auth/login']">
+        إبدأ الأن
+      </button>
+    </div>
+  </div>
+</section>

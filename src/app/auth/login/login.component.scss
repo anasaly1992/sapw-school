@@ -1,0 +1,79 @@
+@import "../../../global";
+
+.login {
+  background-color: $spw-light-gray-bg;
+
+  &__image {
+    width: 45%;
+    object-fit: cover;
+  }
+  &__form {
+    padding: 54px 125px 63px 150px;
+    width: 55%;
+
+    form {
+      background-color: #fff;
+      border-radius: $radius-md;
+      box-shadow: 1px 2px 3px 2px rgba(1, 2, 2, 0.02);
+      margin-bottom: 3.9375rem;
+      padding: 52px 55px 41px 55px;
+    }
+    .form-title {
+      @include text($spw-dark-blue, 1.875rem, bold, normal);
+      margin-bottom: 39px;
+    }
+    .form-group {
+      margin-bottom: 1.0625rem;
+      &:last-of-type {
+        margin-bottom: 1.25rem;
+      }
+      label {
+        @include form-label();
+      }
+      .form-control {
+        @include text($spw-black, 0.875rem, bold, normal);
+      }
+    }
+    .forget-password {
+      @include text($spw-red, 0.875rem, bold, normal);
+      margin-bottom: 2.5625rem;
+    }
+    .login-btn {
+      @include text(#fff, 1rem, bold, normal);
+      margin-bottom: 2.125rem;
+      padding: 0.6875rem 0 0.875rem;
+      width: 100%;
+    }
+    .social-login-title {
+      @include text($light-gray-1, 1rem, normal, normal);
+      margin-bottom: 1.5625rem;
+      &::before,
+      &::after {
+        content: "";
+        background-color: $light-gray-1;
+        display: inline-block;
+        height: 1px;
+        width: calc((100% - (81px + 10px)) / 2);
+      }
+
+      &::before {
+        margin-left: 10px;
+      }
+      &::after {
+        margin-right: 11px;
+      }
+    }
+    .social-buttons {
+      .facebook-icon {
+        margin-left: 31px;
+      }
+    }
+    .already-member {
+      @include text(#232323, 1.25rem, normal, normal);
+      a {
+        color: $spw-blue;
+        font-weight: bold;
+      }
+    }
+  }
+}

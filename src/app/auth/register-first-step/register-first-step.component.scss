@@ -1,0 +1,15 @@
+.first-step {
+  .student-avatar {
+    margin-bottom: 1.0625rem;
+  }
+
+  &__next {
+    padding: 0 40px;
+    font-size: 1rem;
+    .next-btn {
+      color: #fff;
+      padding-bottom: 0.875rem;
+      padding-top: 0.6875rem;
+    }
+  }
+}

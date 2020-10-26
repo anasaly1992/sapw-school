@@ -1,0 +1,14 @@
+.second-step {
+  &__next {
+    padding: 0 40px;
+    .next-btn,
+    .prev-btn {
+      color: #fff;
+      padding: 0.6875rem 0 0.875rem 0;
+    }
+    .prev-btn {
+      line-height: 0;
+      padding: 0.6875rem;
+    }
+  }
+}

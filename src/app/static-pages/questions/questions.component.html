@@ -1,0 +1,78 @@
+<section id="FAQs">
+  <div class="container FAQs">
+    <h1 class="text-center">{{ frequentlyQuestions.title }}</h1>
+    <div class="question-how-work">
+      <h5>{{ frequentlyQuestions.subTitle }}</h5>
+      <p>{{ frequentlyQuestions.par }}</p>
+    </div>
+
+    <div
+      class="toggle-aria"
+      *ngFor="let question of frequentlyQuestions.question; let i = index"
+    >
+      <div
+        class="toggle-header card-body"
+        (click)="isCollapsedd(i)"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample"
+      >
+        <h5>{{ question.question }}</h5>
+      </div>
+
+      <div id="collapseExample" [ngbCollapse]="question.isCollapsed">
+        <div class="card">
+          <div class="card-body">
+            <p>{{ question.answer }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="follow-lectures">
+  <div class="container follow-lectures">
+    <div class="row">
+      <div class="col-xl-5">
+        <div class="content">
+          <h2>{{ followLectures.header }}</h2>
+          <p>{{ followLectures.par }}</p>
+          <ul>
+            <li *ngFor="let data of followLectures.list">
+              <div class="img float-right">
+                <img width="32px" height="32px" alt="icon" [src]="data.img" />
+              </div>
+              <h5 class="content">{{ data.par }}</h5>
+            </li>
+          </ul>
+          <div class="down-load">
+            <a href="#" class="img"
+              ><img
+                width="171px;"
+                height="54px"
+                alt="icon"
+                [src]="followLectures.downLoadImg.google"
+            /></a>
+            <a href="#" class="img"
+              ><img
+                width="171px;"
+                height="54px"
+                alt="icon"
+                [src]="followLectures.downLoadImg.apple"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-7">
+        <div class="follow-img text-center">
+          <img
+            [src]="followLectures.img"
+            width="auto"
+            height="auto"
+            alt="follow lectures"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

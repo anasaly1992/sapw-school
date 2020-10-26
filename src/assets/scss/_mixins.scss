@@ -1,0 +1,27 @@
+@mixin text(
+  $color,
+  $size,
+  $weight,
+  $line-height,
+  $family: inherit,
+  $letter-spacing: normal,
+  $variant: normal
+) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-variant: $variant;
+  font-family: $family;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin form-label {
+  @include text($dark-gray-3, 1rem, normal, normal);
+  margin-bottom: 0.4375rem;
+}

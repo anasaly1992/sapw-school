@@ -1,0 +1,156 @@
+<div class="second-step">
+  <form
+    class="second-step__form"
+    autocomplete="off"
+    [formGroup]="registerSecondForm"
+  >
+    <div class="form-line row justify-content-between">
+      <div class="form-group col-md-6">
+        <label for="country_id">البلد</label>
+        <mat-select
+          class="form-control"
+          formControlName="country_id"
+          (selectionChange)="getCities(country_id.value)"
+        >
+          <mat-option *ngFor="let country of countries" [value]="country.id">
+            {{ country.Title }}
+          </mat-option>
+        </mat-select>
+        <div
+          *ngIf="country_id.invalid && (country_id.dirty || country_id.touched)"
+          class="pt-1 font-weight-bold"
+        >
+          <p class="text-danger" *ngIf="country_id.errors.required">
+            من فضلك أختر بلدك
+          </p>
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="country_id">المحافظة</label>
+        <mat-select class="form-control" formControlName="city_id">
+          <mat-option
+            *ngIf="defaultCityValue"
+            [value]="defaultCityValue.id"
+            selected
+          >
+            {{ defaultCityValue.Title }}
+          </mat-option>
+          <mat-option *ngFor="let city of cities" [value]="city.id">
+            {{ city.Title }}
+          </mat-option>
+        </mat-select>
+        <div
+          *ngIf="city_id.invalid && (city_id.dirty || city_id.touched)"
+          class="pt-1 font-weight-bold"
+        >
+          <p
+            class="text-danger"
+            *ngIf="city_id.errors.required && country_id.value"
+          >
+            من فضلك أختر محافظتك
+          </p>
+          <p
+            class="text-danger"
+            *ngIf="city_id.errors.required && !country_id.value"
+          >
+            من فضلك أختر بلدك لتظهر لك المحافظات
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-line row justify-content-between">
+      <div class="form-group col-md-6">
+        <label for="class_category">نوع الدراسة</label>
+        <mat-select
+          class="form-control"
+          formControlName="class_category"
+          (selectionChange)="getClassGrades(class_category.value)"
+        >
+          <mat-option
+            *ngFor="let classCategory of classCategories"
+            [value]="classCategory.id"
+          >
+            {{ classCategory.Title }}
+          </mat-option>
+        </mat-select>
+        <div
+          *ngIf="
+            class_category.invalid &&
+            (class_category.dirty || class_category.touched)
+          "
+          class="pt-1 font-weight-bold"
+        >
+          <p class="text-danger" *ngIf="class_category.errors.required">
+            من فضلك أختر نوع دراستك
+          </p>
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="country_id">السنة الدراسية</label>
+        <mat-select class="form-control" formControlName="class_grade">
+          <mat-option
+            *ngIf="defaultGradeValue"
+            [value]="defaultGradeValue.id"
+            selected
+          >
+            {{ defaultGradeValue.Title }}
+          </mat-option>
+          <mat-option
+            *ngFor="let classGrade of classGrades"
+            [value]="classGrade.id"
+          >
+            {{ classGrade.Title }}
+          </mat-option>
+        </mat-select>
+        <div
+          *ngIf="
+            class_grade.invalid && (class_grade.dirty || class_grade.touched)
+          "
+          class="pt-1 font-weight-bold"
+        >
+          <p
+            class="text-danger"
+            *ngIf="class_grade.errors.required && class_category.value"
+          >
+            من فضلك أختر سنتك الدراسية
+          </p>
+          <p
+            class="text-danger"
+            *ngIf="class_grade.errors.required && !class_category.value"
+          >
+            من فضلك أختر نوع دراستك لتظهر لك السنين الدراسية
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="second-step__next row">
+      <div class="col-md-11">
+        <button
+          class="next-btn spw-blue-button w-100"
+          type="submit"
+          [class.disabled]="!registerSecondForm.valid"
+          [disabled]="!registerSecondForm.valid"
+          cdkStepperNext
+          (click)="completeSecondStep()"
+        >
+          التالي
+        </button>
+      </div>
+      <div class="col-md-1">
+        <button
+          class="prev-btn spw-dark-blue-button w-100"
+          type="submit"
+          cdkStepperPrevious
+          (click)="completeSecondStep()"
+        >
+          <img
+            src="../../../assets/images/prev-icon.svg"
+            alt="Prev Step Icon"
+          />
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

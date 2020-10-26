@@ -1,0 +1,97 @@
+<section id="student-your-lectures">
+  <div class="container student-your-lectures">
+    <div class="col-12">
+      <h1 class="text-center">{{ yourLectures.title }}</h1>
+      <p class="text-center">{{ yourLectures.par }}</p>
+      <div class="center">
+        <button type="button" class="btn btn-primary" [routerLink]="['/auth/login']">
+          {{ yourLectures.button }}
+        </button>
+      </div>
+      <div class="img">
+        <img [src]="yourLectures.img" width="100%" height="auto" alt="youer lecture image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="your-subjects">
+  <div class="container your-subjects">
+    <h2>دروسك بين يديك</h2>
+
+    <div class="row your-subjects-row">
+      <div class="col-lg-3 col-sm-6 col-12" *ngFor="let data of yourSubjects.Teachers">
+        <div class="your-subjects-card">
+          <h5>{{ data.course_title }}</h5>
+          <p>{{ data.grade }}</p>
+          <div class="img">
+            <img [src]="data.profile_picture" width="100%" height="100%" alt="teacher" />
+            <div class="icon">
+              <img src="../../../assets/icons/group-10.png" width="100%" height="auto" alt="icon" />
+            </div>
+          </div>
+          <div class="content">
+            <h6>{{ data.teacher_name }}</h6>
+            <span *ngIf="data.gender.toLowerCase() === 'male'">المدرس</span>
+            <span *ngIf="data.gender.toLowerCase() === 'female'">المدرسة</span>
+          </div>
+        </div>
+      </div>
+      <img class="shape" src="../../assets/shapes/combined-shape.png" alt="dots shape" />
+    </div>
+    <div class="center">
+      <a [routerLink]="['/auth/login']">المزيد</a>
+    </div>
+  </div>
+</section>
+
+<section id="which-subject-to-follow">
+  <div class="container which-subject-to-follow">
+    <h2>{{ whichSubjectToFollow.title }}</h2>
+    <div class="row which-subject-row">
+      <div class="col-lg-3 col-md-6 col-12" *ngFor="let data of whichSubjectToFollow.whichSubjectToFollowCardData">
+        <div class="which-subject-card">
+          <div class="img">
+            <img [src]="data.img" />
+          </div>
+          <h4 [ngStyle]="{ color: data.color }">{{ data.header }}</h4>
+        </div>
+      </div>
+      <img class="shape" src="assets/shapes/combined-shape.png" alt="dots shape" />
+    </div>
+    <div class="center">
+      <a [routerLink]="['/auth/login']">المزيد</a>
+    </div>
+  </div>
+</section>
+<section id="follow-lectures">
+  <div class="container follow-lectures">
+    <div class="row">
+      <div class="col-xl-5">
+        <div class="content">
+          <h2>{{ followLectures.header }}</h2>
+          <p>{{ followLectures.par }}</p>
+          <ul>
+            <li *ngFor="let data of followLectures.list">
+              <div class="img float-right">
+                <img width="32px" height="32px" alt="icon" [src]="data.img" />
+              </div>
+              <h5 class="content">{{ data.par }}</h5>
+            </li>
+          </ul>
+          <div class="down-load">
+            <a href="#" class="img"><img width="171px;" height="54px" alt="icon"
+                [src]="followLectures.downLoadImg.google" /></a>
+            <a href="#" class="img"><img width="171px;" height="54px" alt="icon"
+                [src]="followLectures.downLoadImg.apple" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-7">
+        <div class="follow-img text-center">
+          <img [src]="followLectures.img" width="auto" height="auto" alt="follow lectures" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

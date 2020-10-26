@@ -1,0 +1,21 @@
+<section class="stepper">
+  <header class="text-center">
+    <h2 class="stepper__current-step">
+      الخطوة {{ selectedIndex + 1 }} من {{ steps.length }}
+    </h2>
+  </header>
+
+  <div class="stepper__steps-wrapper">
+    <mat-progress-bar
+      class="stepper__progress"
+      mode="determinate"
+      [value]="(100 / steps.length) * (selectedIndex + 1)"
+    ></mat-progress-bar>
+    <div
+      class="stepper__step-content"
+      [style.display]="selected ? 'block' : 'none'"
+    >
+      <ng-container [ngTemplateOutlet]="selected.content"></ng-container>
+    </div>
+  </div>
+</section>

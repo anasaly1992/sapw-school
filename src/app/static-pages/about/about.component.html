@@ -1,0 +1,140 @@
+<section id="learning-fun">
+  <div class="container learning-fun">
+    <div class="row">
+      <div class="col-xl-6">
+        <div class="img text-center">
+          <img [src]="learningFun.img" width="100%" height="100%" alt="learning fun image" />
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="content">
+          <h1>{{ learningFun.title }}</h1>
+          <p>{{ learningFun.par }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div class="row">
+      <div class="col-xl-8">
+        <div class="content">
+          <!-- <h1>{{learningFun.title}}</h1> -->
+          <p>{{ about.par }}</p>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="img text-center">
+          <img [src]="about.img" width="100%" height="100%" alt="about spaw image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-work">
+  <div class="container how-work">
+    <h2>{{ howWork.title }}</h2>
+    <h5>{{ howWork.par }}</h5>
+    <div class="row how-card-row">
+      <div class="col-lg-3 col-md-6 col-12" *ngFor="let data of howWork.howWorkCardData; let i = index">
+        <div class="how-card" (mouseout)="howWork.howWorkCardData[i].hover = 1"
+          (mouseover)="howWork.howWorkCardData[i].hover = 2">
+          <div class="img" [ngStyle]="
+              howWork.howWorkCardData[i].hover === 1
+                ? Style(data.icon)
+                : hoverStyle(data.hoverIcon)
+            ">
+            <!-- <img [src]="data.icon"> -->
+          </div>
+          <h4>{{ data.header }}</h4>
+          <p>{{ data.par }}</p>
+          <span>{{ data.number }}</span>
+        </div>
+      </div>
+      <img class="shape" src="assets/shapes/combined-shape.png" alt="dots shape" />
+    </div>
+    <div class="center">
+      <button type="button" class="btn btn-primary" [routerLink]="['/auth/login']">
+        إبدأ الأن
+      </button>
+    </div>
+  </div>
+</section>
+<section id="follow-lectures">
+  <div class="container follow-lectures">
+    <div class="row">
+      <div class="col-xl-5">
+        <div class="content">
+          <h2>{{ followLectures.header }}</h2>
+          <p>{{ followLectures.par }}</p>
+          <ul>
+            <li *ngFor="let data of followLectures.list">
+              <div class="img float-right">
+                <img width="32px" height="32px" alt="icon" [src]="data.img" />
+              </div>
+              <h5 class="content">{{ data.par }}</h5>
+            </li>
+          </ul>
+          <div class="down-load">
+            <a href="#" class="img"><img width="171px;" height="54px" alt="icon"
+                [src]="followLectures.downLoadImg.google" /></a>
+            <a href="#" class="img"><img width="171px;" height="54px" alt="icon"
+                [src]="followLectures.downLoadImg.apple" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-7">
+        <div class="follow-img text-center">
+          <img [src]="followLectures.img" width="auto" height="auto" alt="follow lectures" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="be-teacher">
+  <div class="container be-teacher">
+    <div class="row">
+      <div class="col-xl-3">
+        <div class="img text-center">
+          <img [src]="beTeacher.img" width="100%" height="100%" alt="be teacher image" />
+        </div>
+      </div>
+      <div class="col-xl-9">
+        <div class="content">
+          <h2>{{ beTeacher.header }}</h2>
+          <p>{{ beTeacher.par }}</p>
+          <button type="button" class="btn btn-primary" [routerLink]="['/auth/login']">
+            كن معلما
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-learning">
+  <div class="container how-learning">
+    <h2>{{ howLearning.title }}</h2>
+    <h5>{{ howLearning.par }}</h5>
+    <div class="row how-learning-row">
+      <div class="col-lg-3 col-md-6 col-12" *ngFor="let data of howLearning.howLeaningCardData; let i = index">
+        <div class="how-learning" (mouseout)="howLearning.howLeaningCardData[i].hover = 1"
+          (mouseover)="howLearning.howLeaningCardData[i].hover = 2">
+          <div class="img" [ngStyle]="
+              howLearning.howLeaningCardData[i].hover === 1
+                ? Style(data.icon)
+                : hoverStyle(data.hoverIcon)
+            ">
+            <!-- <img [src]="data.icon"> -->
+          </div>
+          <h4>{{ data.header }}</h4>
+          <p>{{ data.par }}</p>
+        </div>
+      </div>
+      <img class="shape" src="assets/shapes/combined-shape.png" alt="dots shape" />
+    </div>
+  </div>
+</section>
